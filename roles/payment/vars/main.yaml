@@ -1,0 +1,5 @@
+CART_HOST: cart.rachelsigao.online
+USER_HOST: user.rachelsigao.online
+RABBITMQ_HOST: rabbitmq.rachelsigao.online
+RABBITMQ_USER: roboshop
+RABBITMQ_PASSWORD: roboshop123

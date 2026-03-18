@@ -1,0 +1,7 @@
+- name: "configure {{ component }}"
+  become: yes
+  # hosts: "{{ component }}" # this will automatically load the inventory file having the same name as component
+  hosts: localhost
+  connection: local # this will run the playbook on local machine instead of remote machine
+  roles: # this will automatically load the roles directory having the same name as component
+    - "{{ component }}"
