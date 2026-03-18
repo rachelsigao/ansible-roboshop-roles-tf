@@ -1,1 +1,1 @@
-MONGODB_HOST: mongodb.rachelsigao.online
+MONGODB_HOST: "mongodb-{{ env }}.rachelsigao.online"
