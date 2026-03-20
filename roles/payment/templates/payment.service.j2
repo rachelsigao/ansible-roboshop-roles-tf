@@ -7,8 +7,10 @@ WorkingDirectory=/app
 // highlight-start
 Environment=CART_HOST={{ CART_HOST }}
 Environment=CART_PORT=8080
+{# Use PORT=80, Incase of Internal communication from ALB #}
 Environment=USER_HOST={{ USER_HOST }}
 Environment=USER_PORT=8080
+{# Use PORT=80, Incase of Internal communication from ALB #}
 Environment=AMQP_HOST={{ RABBITMQ_HOST }}
 // highlight-end
 Environment=AMQP_USER={{ RABBITMQ_USER }}

@@ -2,3 +2,7 @@ MYSQL_HOST: mysql.rachelsigao.online
 MYSQL_ROOT_USER: root
 MYSQL_ROOT_PASSWORD: RoboShop@1
 CART_HOST: cart.rachelsigao.online
+
+# for terraform-roboshop-module
+# MYSQL_HOST: mysql-{{ env }}.rachelsigao.online
+# CART_HOST: cart-.backend{{ env }}.rachelsigao.online # Communication happens through ALB ARN i.e, (*.backend.rachelsigao.online)

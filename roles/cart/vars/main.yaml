@@ -1,2 +1,6 @@
 CATALOGUE_HOST: catalogue.rachelsigao.online
 REDIS_HOST: redis.rachelsigao.online
+
+# for terraform-roboshop-module
+# CATALOGUE_HOST: catalogue.backend-{{ env }}.rachelsigao.online # Communication happens through backend ALB ARN i.e, (*.backend-dev.rachelsigao.online)
+# REDIS_HOST: redis-{{ env }}.rachelsigao.online 

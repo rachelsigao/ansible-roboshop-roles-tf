@@ -6,6 +6,7 @@ User=roboshop
 Environment=REDIS_HOST={{ REDIS_HOST }}
 Environment=CATALOGUE_HOST={{ CATALOGUE_HOST }}
 Environment=CATALOGUE_PORT=8080
+{# Use PORT=80, Incase of Internal communication from ALB #}
 // highlight-end
 ExecStart=/bin/node /app/server.js
 SyslogIdentifier=cart

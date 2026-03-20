@@ -1,2 +1,6 @@
 REDIS_HOST: redis.rachelsigao.online
 MONGODB_HOST: mongodb.rachelsigao.online
+
+# for terraform-roboshop-module
+# REDIS_HOST: redis-{{ env }}.rachelsigao.online
+# MONGODB_HOST: mongodb-{{ env }}.rachelsigao.online
