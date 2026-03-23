@@ -5,6 +5,6 @@ RABBITMQ_USER: roboshop
 RABBITMQ_PASSWORD: roboshop123
 
 # for terraform-roboshop-module
-# CART_HOST: cart.backend-{{ env }}.rachelsigao.online # Communication happens through backend ALB ARN i.e, (*.backend-dev.rachelsigao.online)   
-# USER_HOST: user.backend-{{ env }}.rachelsigao.online # Communication happens through backend ALB ARN i.e, (*.backend-dev.rachelsigao.online)
+# CART_HOST: cart.backend-{{ env }}.rachelsigao.online # Communication happens through backend ALB. Hence we use ARN (*.backend-dev.rachelsigao.online)   
+# USER_HOST: user.backend-{{ env }}.rachelsigao.online # Communication happens through backend ALB. Hence we use ARN (*.backend-dev.rachelsigao.online)
 # RABBITMQ_HOST: rabbitmq-{{ env }}.rachelsigao.online 
