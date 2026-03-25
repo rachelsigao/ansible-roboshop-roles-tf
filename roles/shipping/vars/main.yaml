@@ -5,4 +5,6 @@
 
 # for terraform-roboshop-module
 MYSQL_HOST: mysql-{{ env }}.rachelsigao.online
-CART_HOST: cart-.backend{{ env }}.rachelsigao.online # Communication happens through backend ALB. Hence we use ARN (*.backend-dev.rachelsigao.online)
+MYSQL_ROOT_USER: root
+MYSQL_ROOT_PASSWORD: "{{ lookup('amazon.aws.aws_ssm', '/roboshop/{{ env }}/mysql/mysql_root_password', region='us-east-1', decrypt=True ) }}"
+CART_HOST: cart.backend-{{ env }}.rachelsigao.online # Communication happens through backend ALB (*.backend-dev.rachelsigao.online)
