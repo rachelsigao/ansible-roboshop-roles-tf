@@ -5,8 +5,8 @@
 # PAYMENT_HOST: payment.rachelsigao.online
 
 # for terraform-roboshop-module
-CATALOGUE_HOST: catalogue-{{ env }}.rachelsigao.online
-USER_HOST: user-{{ env }}.rachelsigao.online
-CART_HOST: cart-{{ env }}.rachelsigao.online    
-SHIPPING_HOST: shipping-{{ env }}.rachelsigao.online
-PAYMENT_HOST: payment-{{ env }}.rachelsigao.online
+CATALOGUE_HOST: catalogue.backend-{{ env }}.rachelsigao.online
+USER_HOST: user.backend-{{ env }}.rachelsigao.online
+CART_HOST: cart.backend-{{ env }}.rachelsigao.online
+SHIPPING_HOST: shipping.backend-{{ env }}.rachelsigao.online
+PAYMENT_HOST: payment.backend-{{ env }}.rachelsigao.online
