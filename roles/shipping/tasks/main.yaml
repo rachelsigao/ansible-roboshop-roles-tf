@@ -6,9 +6,9 @@
     - boto3
     - botocore
 
-- name: fetch mysql root password from SSM
-  ansible.builtin.set_fact:
-    MYSQL_ROOT_PASSWORD: "{{ lookup('amazon.aws.aws_ssm', '/roboshop/' + env + '/mysql/mysql_root_password', region='us-east-1', decrypt=True) }}"
+# - name: fetch mysql root password from SSM
+#   ansible.builtin.set_fact:
+#     MYSQL_ROOT_PASSWORD: "{{ lookup('amazon.aws.aws_ssm', '/roboshop/' + env + '/mysql_root_password', region='us-east-1', decrypt=True) }}"
 
 - name: app setup
   include_role:
